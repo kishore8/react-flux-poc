@@ -1,7 +1,6 @@
 import { EventEmitter } from 'events';
 import Dispatcher from '../appDispatcher';
 import actionTypes from '../actions/actionTypes';
-import { courses as cour } from '../../../tools/mockData';
 
 const CHANGE_EVENT = "change";
 let _courses = [];

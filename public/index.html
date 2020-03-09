@@ -28,4 +28,26 @@
       To create a production bundle, use `npm run build`.
     -->
   </body>
+  <script>
+    if(localStorage.getItem('courses')){
+      localStorage.removeItem('courses');
+    }
+    var mockBasicArr = [
+        {
+        id: 1,
+        title: "Securing React Apps with Auth0",
+        slug: "react-auth0-authentication-security",
+        authorId: 1,
+        category: "JavaScript"
+      },
+      {
+        id: 2,
+        title: "React: The Big Picture",
+        slug: "react-big-picture",
+        authorId: 1,
+        category: "JavaScript"
+      }
+    ]
+    localStorage.setItem('courses',JSON.stringify(mockBasicArr));
+  </script>
 </html>

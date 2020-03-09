@@ -53,13 +53,6 @@ const ManageCourseProps = props =>{
     function handleSubmit(event){
         event.preventDefault();
         if(!formIsValid()) return;
-        let course = {
-            id:45,
-            slug:'react-auth0-authentication-security',
-            title:'react-auth0-authentication-security',
-            authorId: 1,
-            category:"Javascript"
-        };
         CourseActions.saveCourse(course);
         toast.success('course saved');
         props.history.push("/courses");
